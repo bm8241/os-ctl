@@ -28,7 +28,7 @@
 
   - name: Install docker
     yum:
-      name: docker-1.13
+      name: docker
       state: present
 
   - name: Enable & start docker service

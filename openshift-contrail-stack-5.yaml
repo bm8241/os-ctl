@@ -282,8 +282,8 @@ Resources:
           # Install openshift
           
           cd ~/ && git clone https://github.com/savithruml/openshift-ansible -b contrail-training
-          wget -O ~/openshift-ansible/inventory/byo/ose-prerequisites.yml 'https://gitlab.com/dvt-refinitiv/reflex-dvt/reflex-explore/blob/master/contrail-openshift-3.11/ose-prerequisites.yml'
-          wget -O ~/openshift-ansible/inventory/byo/ose-install 'https://gitlab.com/dvt-refinitiv/reflex-dvt/reflex-explore/blob/master/contrail-openshift-3.11/ose-install'
+          wget -O ~/openshift-ansible/inventory/byo/ose-prerequisites.yml 'https://raw.githubusercontent.com/bm8241/os-ctl/master/ose-prerequisites.yml'
+          wget -O ~/openshift-ansible/inventory/byo/ose-install 'https://raw.githubusercontent.com/bm8241/os-ctl/master/ose-install'
           cat >> ~/openshift-ansible/inventory/byo/ose-install << EOF
           [masters]
           ${MasterIPv4Address} openshift_hostname=$HOSTNAME
